@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      {{ this.username}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list id="inicio-list2">
+    <div align="center">
+      <img src="assets/imgs/logo3h.png" width="50%" alt="Logo 3H">
+    </div>
+    <div class="spacer" style="width:300px;height:11px;" id="home-spacer2"></div>
+    <!-- <ion-item style="border: 1px solid #B91919;border-radius: 10px; color:#B91919;  margin: 0px 20px; width: 87%;">
+        <div style="float: left; width: 20%; text-align:center;">
+          <img src="http://hostingwebmex.com/z3h/iconos/store.png" alt="" style="width: 32px; height: 32px;">
+        </div>
+        <div style="float: left; width: 70%; text-align:center; padding-top: 0px;">
+          <h3 align="left">
+            <strong style="position: relative; color:#5d5d5d">
+              Sucursal:
+            </strong>
+          </h3>
+        </div>
+        <div style="float: left; width: 70%; text-align:left; padding-top: 0px;">
+          <h3>
+            {{ this.name }}
+          </h3>
+        </div> 
+      </ion-item> -->
+    <div class="spacer" style="width:300px;height:5px;" id="home-spacer2"></div>
+  </ion-list>
+  <div style="background: #fff; padding:5px 20px; border-radius: 5px;">
+    <button ion-button color="light" class="boton1" block large icon-left
+      style="font-weight:500;font-size:25px; color:#fff; border-radius: 15px" (click)="buscarTienda('ReporteoPage')">
+      <div style="float: left; width: 25%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/reporteo.png" alt="" style="width: 32px; height: 32px;">
+      </div>
+      <div style="float: left; width: 75%; text-align:center; padding-top: 2px;">
+        <p>Reporteo</p>
+      </div>
+    </button>
+    <div class="spacer" style="width:300px;height:7px;" id="home-spacer2"></div>
+    <button ion-button color="light" (click)="buscarTienda('HistorialPage')" class="boton1" block large icon-left
+      style="font-weight:500;font-size:25px;color:#fff; border-radius: 15px">
+      <div style="float: left; width: 25%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/historial.png" alt="" style="width: 32px; height: 32px;">
+      </div>
+      <div style="float: left; width: 75%; text-align:center; padding-top: 2px;">
+        <p>Historial</p>
+      </div>
+    </button>
+    <div class="spacer" style="width:300px;height:7px;" id="home-spacer2"></div>
+    <button ion-button color="light" class="boton1" block large (click)="eventos()" icon-left
+      style="font-weight:500;font-size:25px;color:#fff; border-radius: 15px">
+      <div style="float: left; width: 25%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/eventos.png" alt="" style="width: 32px; height: 32px;">
+      </div>
+      <div style="float: left; width: 75%; text-align:center; padding-top: 2px;">
+        <p>Eventos</p>
+      </div>
+    </button>
+  </div>
+
+  <div class="spacer" style="width:300px;height:10px;" id="home-spacer2"></div>
+  <div align="center">
+    <img src="assets/imgs/f1Zd1L2Sz6o0RYcIOyTa_img1.jpg" width="80%" alt="">
+  </div>
+
+</ion-content>

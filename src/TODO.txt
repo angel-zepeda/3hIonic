@@ -1,0 +1,11 @@
+Ionic APP
+    [X] Cambiar metodo de evaluación
+    [] Poner emoji en lugar de un número de calificación
+    [X] ** Poner FirmaFotoPage en un 'Modal' ** 
+    [] Mostrar carita de evaluación en el HistorialPage
+    [X] Validar campos en caso de que se haya olvidado evaluar alguno 
+    [X] Agregar imgs de mobiliario 
+    
+Angular APP
+    [] Agregar Estilos
+    [] Agregar diseño para mostrar los aspectos evaluados

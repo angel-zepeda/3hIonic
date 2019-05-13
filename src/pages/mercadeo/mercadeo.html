@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <ion-icon name="pricetags"></ion-icon>
+      MERCADEO
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding
+  style="background-image: url('assets/imgs/Rg8Z0VG0Q1i0gnDEGP6A_back4.jpg');background-repeat: no-repeat;  background-position: top center;">
+  <ion-avatar>
+    <img src="assets/imgs/hSDtdnxwQMqFa4QC9INn_logo.png"
+      style="width:64px;height: 64px; margin: 0; transform: translateX(38vw);">
+  </ion-avatar>
+  <h1 align="center" style="color:#fff">Áreas de mercadeo:</h1>
+  <div style=" transform:translateY(1vh);">
+    <button id="damas" ion-button block color="light" class="boton1" full (click)="aspectosDama(9)"
+      style="border-radius:15px; margin-bottom:15px; padding:25px;color:#fff">
+      <div *ngIf="evalDa == true">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div style="float: left; width: 15%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/dama.png" alt="" width="32" height="32">
+      </div>
+      <div style="float: left; width: 85%; text-align:center; padding-left: 0px;">
+        <p style="font-size:1.6rem; letter-spacing: 0.3rem">
+          <p style="font-size:1.6rem;">
+            <strong> Damas</strong>
+          </p>
+      </div>
+    </button>
+    <button id="deportes" ion-button block color="light" class="boton1" (click)="aspectosDeportes(10)" full
+      style="border-radius:15px; margin-bottom:15px; padding:25px;color:#fff">
+      <div *ngIf="evalDe == true">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div style="float: left; width: 15%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/deportes.png" alt="" width="32" height="32">
+      </div>
+      <div style="float: left; width: 85%; text-align:center; padding-left: 0px;">
+        <p style="font-size:1.6rem; letter-spacing: 0.3rem">
+          <p style="font-size:1.6rem;">
+            <strong> Deportes</strong>
+          </p>
+      </div>
+    </button>
+    <button id="niños" ion-button block color="light" class="boton1" full (click)="aspectosNinos(11)"
+      style="border-radius:15px; margin-bottom:15px; padding:25px;color:#fff">
+      <div *ngIf="evalNi == true">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div style="float: left; width: 15%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/kids.png" alt="" width="32" height="32">
+      </div>
+      <div style="float: left; width: 85%; text-align:center; padding-left: 0px;">
+        <p style="font-size:1.6rem; letter-spacing: 0.3rem">
+          <p style="font-size:1.6rem;">
+            <strong> Niños </strong>
+          </p>
+      </div>
+    </button>
+    <button id="caballeros" ion-button block color="light" class="boton1" full (click)="aspectosCaballero(8)"
+      style="border-radius:15px; margin-bottom:15px; padding:25px;color:#fff">
+      <div *ngIf="evalCa == true">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div style="float: left; width: 15%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/caballeros.png" alt="" width="32" height="32">
+      </div>
+      <div style="float: left; width: 85%; text-align:center; padding-left: 0px;">
+        <p style="font-size:1.6rem; letter-spacing: 0.3rem">
+          <p style="font-size:1.6rem;">
+            <strong> Caballeros</strong>
+          </p>
+      </div>
+    </button>
+
+
+    <button id="saldos" ion-button block color="light" class="boton1" full (click)="aspectosSaldos(12)"
+      style="border-radius:15px; margin-bottom:15px; padding:25px; color:#fff">
+      <div *ngIf="evalSa == true">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div style="float: left; width: 15%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/saldos.png" alt="" width="32" height="32">
+      </div>
+      <div style="float: left; width: 85%; text-align:center; padding-left: 0px;">
+        <p style="font-size:1.6rem; letter-spacing: 0.3rem">
+          <p style="font-size:1.6rem;">
+            <strong> Saldos</strong>
+          </p>
+      </div>
+    </button>
+    <!-- <button id="general" ion-button block color="light" class="boton1" full (click)="aspectosGeneral(12)"
+                                                        style="border-radius:15px; margin-bottom:15px; padding:25px; color:#fff">
+      <div *ngIf="evalGe == true">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div style="float: left; width: 15%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/general.png" alt="" width="32" height="32">
+      </div>
+      <div style="float: left; width: 85%; text-align:center; padding-left: 0px;">
+        <p style="font-size:1.6rem; letter-spacing: 0.3rem">
+          <p style="font-size:1.6rem;">
+            <strong> General</strong>
+          </p>
+      </div>
+    </button> -->
+    <button id="bodega" ion-button block color="light" class="boton1" full (click)="aspectosBodega(12)"
+      style="border-radius:15px; margin-bottom:15px; padding:25px; color:#fff">
+      <div *ngIf="evalBo == true">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div style="float: left; width: 15%; text-align:center;">
+        <img src="http://hostingwebmex.com/z3h/iconos/sala.png" alt="" width="32" height="32">
+      </div>
+      <div style="float: left; width: 85%; text-align:center; padding-left: 0px;">
+        <p style="font-size:1.6rem; letter-spacing: 0.3rem">
+          <p style="font-size:1.6rem;">
+            <strong> Bodega</strong>
+          </p>
+      </div>
+    </button>
+  </div>
+</ion-content>

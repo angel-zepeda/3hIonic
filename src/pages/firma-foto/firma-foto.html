@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title align="center">
+      <ion-icon name="photos"></ion-icon>
+      Evidencias
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">X</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding
+  style="background: url('https://t3.ftcdn.net/jpg/01/30/82/72/240_F_130827267_qiwaSzorZ1Lixv5W2dPc1NXqVnxbpQiV.jpg')">
+  <div align="center">
+    <img src="https://lh3.ggpht.com/tU-zfWFzbltfzz2A9Qen_7X1tZx3wXCp078X7rgkUOWqQdl567bEZc8v2OEizoDBr0Q=w300" alt=""
+      width="50%" height="20%">
+  </div>
+  <form action="">
+    <button ion-button block color="warning" (click)="foto()">
+      <ion-icon name="camera"> </ion-icon>
+      Tomar fotos
+    </button>
+    <div *ngFor="let img of image"
+      style="width: 25vw;height:15vh; background: white; padding: 15px; border-radius: 10px;">
+      <img [src]="img" *ngIf="image" />
+    </div>
+    <br>
+    <br>
+    <p align="center">Firma del supervisor</p>
+    <br>
+    <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()">
+    </signature-pad>
+    <button ion-button type=" submit" (click)="enviar()" block>Enviar Reporte</button>
+  </form>
+</ion-content>

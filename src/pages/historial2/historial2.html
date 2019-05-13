@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>Historial por áreas </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding
+  style="background: url('https://t3.ftcdn.net/jpg/01/30/82/72/240_F_130827267_qiwaSzorZ1Lixv5W2dPc1NXqVnxbpQiV.jpg')">
+  <div *ngFor="let report of report">
+    <div *ngFor="let a of report.areas">
+      <ion-card>
+        <ion-item color="danger">
+          <ion-label>
+            <ion-icon name="clipboard"></ion-icon>
+            Área: {{a.name}}
+          </ion-label>
+        </ion-item>
+        <ion-card-content style="font-size: 1.7rem !important;">
+          <div *ngFor="let aspect of a.aspects">
+            <p style="color: #B91919;">{{aspect.name}}</p>
+            <p style="color: green;"> - Calificación: {{aspect.score}}</p>
+            <p style="padding: 8px; border-radius: 5px; color: blue;">
+              - Observación: {{aspect.comment}}</p>
+            <hr>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <ion-card padding>
+      <ion-card-header align="center">
+        Evidencias fotográficas
+      </ion-card-header>
+      <div *ngFor="let photos of report.photos">
+        <img src="http://157.230.81.230:5000/{{photos}}" alt="" height="300px">
+      </div>
+    </ion-card>
+    <ion-card padding>
+      <ion-card-header align="center">
+        Firma del supervisor
+      </ion-card-header>
+      <img src="http://157.230.81.230:5000/{{report.signature}}" alt="" height="25%">
+    </ion-card>
+  </div>
+
+
+
+
+</ion-content>

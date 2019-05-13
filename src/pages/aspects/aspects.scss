@@ -1,0 +1,97 @@
+page-aspects {
+  .scroll-content {
+    //background: url('https://t3.ftcdn.net/jpg/01/30/82/72/240_F_130827267_qiwaSzorZ1Lixv5W2dPc1NXqVnxbpQiV.jpg');
+    background: url('https://image.freepik.com/free-photo/leather-shoes-wooden-background_1203-7617.jpg');   
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  ul {
+    padding: 0px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.rating li {
+      padding: 5px 10px !important;
+      background: none;
+      color: #B91919;
+  
+      ion-icon {
+        font-size: 30px;
+      }
+    }
+  }
+  .emoji-label {
+    position: absolute;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0px;
+    display: inline-block;    
+  }
+  #nameA {
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 2px;
+
+  }
+  #buttonM {
+    width:15%; float: right;
+    font-size: 22px;
+    text-align:center;
+    padding: 5px;
+    margin: 3px;
+    height:24px;
+    background: white;
+    width:25px;
+    border-radius: 50%;
+  }
+  
+  #ion-list {    
+    display: inline-block;
+  }  
+  .container-emoji {
+    background: #fff;
+    height: 100px;
+    width: 100vw;
+    padding: 6.5px;
+    font-size: 8rem;
+  }
+  .radio {
+    margin: 28px;
+    padding: 15px;    
+  }
+  
+  .happy {
+    background-image: url('../../assets/imgs/6.png');
+    background-size: cover;
+  }
+    
+  .semi-happy {
+    background-image: url('../../assets/imgs/5.png');
+    background-size: cover;
+  }
+  .semi-sad {
+    background-image: url('../../assets/imgs/4.png');
+    background-size: cover;
+  }
+  .sad {
+    background-image: url('../../assets/imgs/3.png');
+    background-size: cover;
+  }
+  .super-sad {
+    background-image: url('../../assets/imgs/1.png');
+    background-size: cover;
+  }
+  .active {
+    border-bottom: 5px solid red;
+  }
+  .radio-icon {
+    display: none !important;
+  }
+}

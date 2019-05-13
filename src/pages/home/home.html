@@ -1,0 +1,49 @@
+<ion-content padding
+  style="background:url(assets/imgs/Wm5s9eJ6RvCShoptfZgZ_background_o.jpg) no-repeat center;background-size:cover;"
+  id="page1">
+  <div class="spacer" style="width:300px;height:45px;" id="home-spacer5"></div>
+  <img src="assets/imgs/hSDtdnxwQMqFa4QC9INn_logo.png"
+    style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" />
+  <div class="spacer" style="width:300px;height:11px;" id="home-spacer2"></div>
+  <div id="home-container1">
+    <h2 id="home-heading2" style="color:#FFFFFF;font-weight:600;text-align:center;">
+      BIENVENIDO
+    </h2>
+  </div>
+  <div id="home-container2">
+    <div id="home-markdown3" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;">
+        SUPERVICIÓN DE SUCURSALES
+      </p>
+    </div>
+    <div class="spacer" style="width:300px;height:11px;" id="home-spacer2"></div>
+    <p style="color:#FFFFFF; font-weight: bold; text-align: center; letter-spacing: 2px;">
+      Iniciar sesión
+    </p>
+  </div>
+  <div class="spacer" style="width:300px;height:11px;" id="home-spacer2"></div>
+  <form id="home-form3">
+    <ion-item id="home-input3">
+      <ion-label>
+        Usuario
+      </ion-label>
+      <ion-input type="text" placeholder="" name="email" [(ngModel)]="user_sign_in.email"></ion-input>
+    </ion-item>
+  </form>
+  <div class="spacer" style="width:300px;height:11px;" id="home-spacer2"></div>
+  <form id="home-form4">
+    <ion-item id="home-input5">
+      <ion-label>
+        Contraseña
+      </ion-label>
+      <ion-input type="password" placeholder="" name="password" [(ngModel)]="user_sign_in.password"></ion-input>
+    </ion-item>
+  </form>
+  <div class="spacer" style="width:300px;height:11px;" id="home-spacer2"></div>
+  <div class="spacer" style="width:300px;height:11px;" id="home-spacer2"></div>
+  <button id="home-button1" ion-button block
+    style="font-weight:500;border-radius:10px; background: rgba(0,0,0,0.3); border: 1px solid white;" full
+    (click)="login()">
+    INGRESAR
+  </button>
+</ion-content>

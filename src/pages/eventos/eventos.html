@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title align="center">
+      <ion-icon name="clipboard"></ion-icon>
+      Eventos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding
+  style="background: url('https://t3.ftcdn.net/jpg/01/30/82/72/240_F_130827267_qiwaSzorZ1Lixv5W2dPc1NXqVnxbpQiV.jpg')">
+  <div *ngIf="reports.reports">
+    <div *ngFor="let report of reports.reports">
+      <ion-card color="danger">
+        <ion-item>
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>
+            <ion-icon name="cart"></ion-icon>
+            Tienda: {{ report.shop.name}}, Nº: {{ report.shop.shop_number}}
+          </ion-label>
+        </ion-item>
+        <ion-card-content style="font-size: 1.5rem;">
+          <br>
+          <ion-icon name="contact"></ion-icon>
+          Supervisor: {{ report.user.nick}}
+          <br><br>
+          <ion-icon name="create"></ion-icon>
+          <strong style="background: white; color: red; padding: 8px; border-radius: 5px;">
+            Calificación de tienda: {{ report.score.toFixed(2) }}
+          </strong>
+          <br><br>
+          <ion-icon name="calendar"></ion-icon>
+          Fecha de supervisón: {{ report.created_at}}
+          <br><br>
+          <ion-icon name="clock"></ion-icon>
+          Hora: {{report.time}}
+        </ion-card-content>
+      </ion-card>
+      <br>
+    </div>
+  </div>
+
+  <div *ngIf="reports.reports == 0">
+    <h2>No hay reportes</h2>
+  </div>
+</ion-content>
