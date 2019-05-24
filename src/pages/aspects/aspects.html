@@ -228,7 +228,7 @@
             </ion-radio> -->
             <ion-label class="emoji-label">Malo</ion-label>
             <ion-radio value="5" name="score" class="radio super-sad" id="angry{{a.name}}"
-              (click)="active('angry'+this.a.name)">
+              (click)="active('angry'+this.a.name, this.a.name)">
             </ion-radio>
             <!-- <ion-radio value="5" name="score" class="radio semi-sad" id="sad{{a.name}}"
               (click)="active('sad'+this.a.name)">
@@ -237,11 +237,12 @@
             <!-- <ion-radio value="8" name="score" class="radio semi-happy" id="confused{{a.name}}"
               (click)="active('confused'+this.a.name)">
             </ion-radio> -->
-            <ion-radio value="8" name="score" class="radio sad" id="mad{{a.name}}" (click)="active('mad'+this.a.name)">
+            <ion-radio value="8" name="score" class="radio sad" id="mad{{a.name}}"
+              (click)="active('mad'+this.a.name, this.a.name)">
             </ion-radio>
             <ion-label class="emoji-label">Bueno</ion-label>
             <ion-radio value="10" name="score" class="radio happy" id="happy{{a.name}}"
-              (click)="active('happy'+this.a.name)">
+              (click)="active('happy'+this.a.name, this.a.name)">
             </ion-radio>
           </div>
         </ion-list>
