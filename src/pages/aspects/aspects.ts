@@ -127,7 +127,7 @@ export class AspectsPage {
     if (emoji.id.includes('mad')) {
       var emoji2 = document.getElementById('happy' + name);
       var emoji3 = document.getElementById('angry' + name);
-      emoji2.style.background = "url('../../assets/imgs/5.png')";
+      emoji2.style.background = "url('../../assets/imgs/6.png')";
       emoji3.style.background = "url('../../assets/imgs/1.png')";
       emoji.style.background = "url('../../assets/imgs/22.png')";
       emoji.style.backgroundSize = "cover";
@@ -138,7 +138,7 @@ export class AspectsPage {
       var emoji2 = document.getElementById('mad' + name);
       var emoji3 = document.getElementById('happy' + name);
       emoji2.style.background = "url('../../assets/imgs/3.png')";
-      emoji3.style.background = "url('../../assets/imgs/5.png')";
+      emoji3.style.background = "url('../../assets/imgs/6.png')";
       emoji.style.background = "url('../../assets/imgs/11.png')";
       emoji.style.backgroundSize = "cover";
       emoji2.style.backgroundSize = "cover";
